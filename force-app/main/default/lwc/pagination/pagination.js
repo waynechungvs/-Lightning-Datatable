@@ -1,4 +1,4 @@
-import { LightningElement,api } from 'lwc';
+import { LightningElement, api } from 'lwc';
 export default class Pagination extends LightningElement {
     currentPage = 1
     totalRecords
@@ -12,18 +12,12 @@ export default class Pagination extends LightningElement {
     set records(data) {
         if (data) {
             this.totalRecords = data
-            console.log(' this.totalRecords'+JSON.stringify( this.totalRecords));
             this.recordSize = Number(this.recordSize)
-                        console.log('recordSize----'+this.recordSize);
-                console.log('recordSize----'+typeof this.recordSize);
             this.totalPage = Math.ceil(data.length / this.recordSize)
             this.updateRecords()
         }
     }
-    connectedCallback() {
-        console.log('recordSizeconec----'+this.recordSize);
-   
-    }
+
     get disablePrevious() {
         return this.currentPage <= 1
     }
@@ -49,15 +43,14 @@ export default class Pagination extends LightningElement {
         const end = this.recordSize * this.currentPage
         this.visibleRecords = this.totalRecords.slice(start, end)
         let cloneData = JSON.parse(JSON.stringify(this.visibleRecords));
-            let dataWithRowIndex = cloneData.map((item, index) => {
-                return { ...item, rowIndex: 'row-' + index };
-            });
-            this.visibleRecords = dataWithRowIndex;
-        console.log('visisghjkl--'+JSON.stringify(this.visibleRecords));
+        let dataWithRowIndex = cloneData.map((item, index) => {
+            return { ...item, rowIndex: 'row-' + index };
+        });
+        this.visibleRecords = dataWithRowIndex;
         this.dispatchEvent(new CustomEvent('update', {
             detail: {
                 records: this.visibleRecords,
-                changePage : this.changePage
+                changePage: this.changePage
             }
         }))
         this.changePage = false;

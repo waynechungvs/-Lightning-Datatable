@@ -4,14 +4,14 @@ import pickliststatic from './pickliststatic.html';
 
 
 export default class LightningDataTable extends LightningDatatable {
-     static customTypes = {
+    static customTypes = {
         picklistColumn: {
             template: pickliststatic,
             editTemplate: picklistColumn,
             standardCellLayout: true,
             typeAttributes: ['label', 'placeholder', 'options', 'value', 'context']
         },
-        
+
     };
 
 
