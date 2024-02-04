@@ -1,18 +1,7 @@
-# Salesforce DX Project: Next Steps
+## Please populate the target configuration with values according to your needs.
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+![Screenshot from 2024-02-04 10-29-51](https://github.com/Himanshu987399/-Generic-Lightning-Datatable/assets/86918713/9ab99008-a5e7-42d9-8fab-43a0a9c3e0d9)
 
-## How Do You Plan to Deploy Your Changes?
+## The resulting data table will resemble:
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
-
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+![Screenshot from 2024-02-04 10-31-01](https://github.com/Himanshu987399/-Generic-Lightning-Datatable/assets/86918713/fa8bb5d6-d544-41c8-a4ec-954015c0ad1d)
