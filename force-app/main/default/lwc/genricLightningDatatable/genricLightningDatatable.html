@@ -1,0 +1,83 @@
+<template>
+	<template if:true={isLoading}>
+		<lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+	</template>
+	<template if:false={isLoading}>
+		<template if:true={isError}>
+			<div class="slds-box slds-grid slds-gutters slds-align_absolute-center">
+				<div class="slds-notify slds-notify_alert slds-alert_error" role="alert">
+					<span class="slds-assistive-text">error</span>
+					<lightning-icon class="white-icon" icon-name="utility:error" alternative-text="Error"
+						size="x-small">
+					</lightning-icon>
+					<h2 class="slds-m-left_xx-small">{errorMessage}</h2>
+				</div>
+			</div>
+		</template>
+		<template if:false={isError}>
+			<lightning-card variant="Narrow" title={headerOfDataTable}>
+				<div class="table__header" style="margin:1%">
+					<template if:true={visibleData}>
+						<div class="slds-p-vertical_x-small">
+							<lightning-layout multiple-rows>
+								<lightning-layout-item size="12" small-device-size="3" medium-device-size="6"
+									large-device-size="3">
+									<div if:true={isAddRecords} style="margin-top:23px">
+										<lightning-button  variant="brand" label="Add Row"
+											icon-name="utility:add" class="slds-m-left_x-small" onclick={handleClick}>
+										</lightning-button>
+									</div>
+								</lightning-layout-item>
+								<lightning-layout-item size="12" padding="horizontal-small" small-device-size="3"
+									medium-device-size="6" large-device-size="3">
+								</lightning-layout-item>
+								<lightning-layout-item size="12" padding="horizontal-small" small-device-size="3"
+									medium-device-size="6" large-device-size="3">
+									<lightning-combobox if:true={searchData} name="Filter by Column" data-filter-input
+										label="Filter by Column" onchange={handleFilterByColumn}
+										options={columnFilterOptions} value='all'>
+									</lightning-combobox>
+								</lightning-layout-item>
+								<lightning-layout-item size="12" small-device-size="3" medium-device-size="6"
+									large-device-size="3">
+									<lightning-input type="search" if:true={searchData} data-search-input
+										onchange={handleChange} name="Search" label="Search"></lightning-input>
+								</lightning-layout-item>
+							</lightning-layout>
+						</div>
+						<div style={dataTableHeight}>
+							<c-lightning-data-table key-field="id" data={visibleData} show-row-number-column
+								draft-values={draftValues} oncellchange={handleCellChange} suppress-bottom-bar
+								hide-checkbox-column columns={column} onrowaction={handleRowAction}>
+							</c-lightning-data-table>
+						</div>
+					</template>
+					<template if:true={isNoRecordError}>
+						<div class="slds-box slds-grid slds-gutters slds-align_absolute-center">
+							<div class="slds-notify slds-notify_alert slds-alert_error" role="alert">
+								<span class="slds-assistive-text">error</span>
+								<lightning-icon class="white-icon" icon-name="utility:error" alternative-text="Error"
+									size="x-small">
+								</lightning-icon>
+								<h2 class="slds-m-left_xx-small">No Record Found</h2>
+							</div>
+						</div>
+					</template>
+					<template if:true={isShowPagination}>
+						<div class="slds-m-top_x-small">
+							<c-pagination record-size={recordShowOnDataTable} records={data}
+								onupdate={updateAccountHandler}></c-pagination>
+						</div>
+					</template>
+				</div>
+				<template if:true={showFooterButton}>
+					<p slot="footer">
+						<lightning-button variant="brand" label="Submit" title="Submit" onclick={handleClick}
+							disabled={isDisabled}>
+						</lightning-button>
+					</p>
+				</template>
+			</lightning-card>
+		</template>
+	</template>
+</template>

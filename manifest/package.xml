@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>GenricLightningDatatableController</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>Adding_records_is_not_permitted_when_pagination_is_enabled</members>
+		<members>Are_you_sure_you_want_to_delete_this_record</members>
+		<members>If_pagination_is_enabled_editing_records_is_not_possible</members>
+		<members>Kindly_choose_the_field_set_name</members>
+		<members>No_changes_were_made</members>
+		<members>Please_also_choose_to_display_pagination_for_the_data_table</members>
+		<members>Please_choose_either_the_field_set_presence_or_provide_the_API_names_for_the_fie</members>
+		<members>Please_choose_the_checkbox_for_the_field_set</members>
+		<members>Please_input_only_numerical_values_for_the_data_table_height</members>
+		<members>Please_input_the_number_of_records_you_wish_to_see_per_page_in_pagination</members>
+		<members>Provide_api_name_or_field_set</members>
+		<members>Record_deleted_successfully</members>
+		<members>Submission_successful</members>
+		<members>provide_api_name</members>
+		<name>CustomLabel</name>
+	</types>
+	<types>
+		<members>genricLightningDatatable</members>
+		<members>lightningDataTable</members>
+		<members>pagination</members>
+		<name>LightningComponentBundle</name>
+	</types>
+	<version>58.0</version>
+</Package>

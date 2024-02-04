@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Adding_records_is_not_permitted_when_pagination_is_enabled</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Adding records is not permitted when pagination is enabled.</shortDescription>
+        <value>Adding records is not permitted when pagination is enabled.</value>
+    </labels>
+    <labels>
+        <fullName>Are_you_sure_you_want_to_delete_this_record</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Are you sure you want to delete this record?</shortDescription>
+        <value>Are you sure you want to delete this record?</value>
+    </labels>
+    <labels>
+        <fullName>If_pagination_is_enabled_editing_records_is_not_possible</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>If pagination is enabled, editing records is not possible.</shortDescription>
+        <value>If pagination is enabled, editing records is not possible.</value>
+    </labels>
+    <labels>
+        <fullName>Kindly_choose_the_field_set_name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Kindly choose the field set name.</shortDescription>
+        <value>Kindly choose the field set name.</value>
+    </labels>
+    <labels>
+        <fullName>No_changes_were_made</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No changes were made.</shortDescription>
+        <value>No changes were made.</value>
+    </labels>
+    <labels>
+        <fullName>Please_also_choose_to_display_pagination_for_the_data_table</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please also choose to display pagination for the data table.</shortDescription>
+        <value>Please also choose to display pagination for the data table.</value>
+    </labels>
+    <labels>
+        <fullName>Please_choose_either_the_field_set_presence_or_provide_the_API_names_for_the_fie</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please choose either the field set presence or provide the API names for the fie</shortDescription>
+        <value>Please choose either the field set presence or provide the API names for the fields.</value>
+    </labels>
+    <labels>
+        <fullName>Please_choose_the_checkbox_for_the_field_set</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please choose the checkbox for the field set.</shortDescription>
+        <value>Please choose the checkbox for the field set.</value>
+    </labels>
+    <labels>
+        <fullName>Please_input_only_numerical_values_for_the_data_table_height</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please input only numerical values for the data table height</shortDescription>
+        <value>Please input only numerical values for the data table height</value>
+    </labels>
+    <labels>
+        <fullName>Please_input_the_number_of_records_you_wish_to_see_per_page_in_pagination</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please input the number of records you wish to see per page in pagination.</shortDescription>
+        <value>Please input the number of records you wish to see per page in pagination.</value>
+    </labels>
+    <labels>
+        <fullName>Provide_api_name_or_field_set</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Provide api name or field set</shortDescription>
+        <value>Please provide either the name of the field set or the API names of the fields.</value>
+    </labels>
+    <labels>
+        <fullName>Record_deleted_successfully</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Record deleted successfully.</shortDescription>
+        <value>Record deleted successfully.</value>
+    </labels>
+    <labels>
+        <fullName>Submission_successful</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Submission successful.</shortDescription>
+        <value>Submission successful.</value>
+    </labels>
+    <labels>
+        <fullName>provide_api_name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>provide api name</shortDescription>
+        <value>Kindly provide the API names for the fields for the data table or specify the field set name.</value>
+    </labels>
+</CustomLabels>
